@@ -1,7 +1,8 @@
 // start product-page
 
 .aside__category,
-.aside__range {
+.aside__range,
+.aside__sellers {
     max-width: 270px;
     background-color: #fff;
     padding: 25px;
@@ -10,7 +11,8 @@
 }
 
 .aside__category-title,
-.aside__range-title {
+.aside__range-title,
+.aside__sellers-title {
     font-size: 20px;
     font-weight: 700;
     color: $color-bg;
@@ -60,6 +62,7 @@
     outline: none;
     color: #fff;
     background-color: $green;
+    cursor: pointer;
 }
 
 .form-aside__range {
@@ -122,6 +125,18 @@
 .irs-to {
     top: 45px;
 }
-
+.aside__sellers-images {
+    padding: 25px 0 0;
+}
+.aside__sellers-img {
+    min-height: 120px;
+}
+.aside__sellers-content {
+    padding: 0;
+    border-bottom: none;
+}
+.aside__inner-info {
+    padding: 0;
+}
 
 // end product-page
