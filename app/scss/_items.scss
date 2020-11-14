@@ -216,6 +216,31 @@
     width: 100%;
     max-width: 870px;
 }
+.product-page__filter-inner {
+    position: relative;
+    padding-right: 25px;
+    .icon-sort-amount-asc {
+        margin-right: 10px;
+        color: #707070;
+        cursor: pointer;
+    }
+    .icon-sort-down {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        color: #707070;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .icon-caret-up {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #707070;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
 
 
 
