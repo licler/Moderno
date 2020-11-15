@@ -25,6 +25,19 @@ $(function(){
         prefix: "$"
     });
 
+    $('.icon-list').on('click', function(){
+     $('.product__inner-item').addClass('list');
+     $('.icon-list').addClass('active');
+     $('.icon-view-tile').removeClass('active');
+    });
+    $('.icon-view-tile').on('click', function(){
+      $('.product__inner-item').removeClass('list');
+      $('.icon-view-tile').addClass('active');
+      $('.icon-list').removeClass('active');
+    });
+
+    
+
 
 
 
