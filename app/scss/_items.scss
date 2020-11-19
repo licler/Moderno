@@ -1,6 +1,6 @@
 // start product-page aside
 .product-page {
-    padding: 40px 0 0;
+    padding: 40px 0 100px;
     background-color: #f4f6f5;
 
 }
@@ -316,7 +316,9 @@
         margin-right: 0;
     }
 }
-
+.pagination {
+    margin-top: 20px;
+}
 .pagination-list {
     li {
         display: inline-block;
