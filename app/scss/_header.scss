@@ -203,6 +203,10 @@
     height: 530px;
     padding: 150px 0;
 }
+.single {
+    height: 230px;
+    padding: 60px 0;
+}
 
 .market__content-title {
     font-size: 48px;
@@ -223,7 +227,9 @@
     text-align: center;
     margin-bottom: 50px;
 }
-
+.single__content-desc {
+    margin-bottom: 20px;
+}
 .market___form {
     text-align: center;
     max-width: 670px;
@@ -258,11 +264,12 @@
     outline: none;
     background-color: transparent;
     position: absolute;
-    top: 20px;
+    top: 17px;
     right: 15px;
 
     .icon-search {
         color: #78909c;
+        font-size: 22px;
     }
 }
 
