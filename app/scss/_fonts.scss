@@ -31,6 +31,8 @@
     font-style: normal;
     font-display: block;
   }
+ 
+  
   
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -113,3 +115,4 @@
   .icon-foursquare:before {
     content: "\ead6";
   }
+ 
