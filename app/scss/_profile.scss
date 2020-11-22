@@ -1,0 +1,119 @@
+// start  profile-page__aside
+.profile-page__wrapper {
+    display: flex;
+}
+.profile-page__aside {
+    margin-right: 25px;
+}
+.profile-page {
+    padding: 50px 0 110px;
+    background-color: #f4f6f5;
+}
+
+.profile-page__social {
+    margin: 20px 0;
+}
+
+.profile-page__link li {
+    display: inline-block;
+
+    li+li {
+        margin-right: 7px;
+    }
+}
+
+.profile-social {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-facebook {
+    background-image: url('../images/footer/facebook.png');
+}
+
+.profile-twitter {
+    background-image: url('../images/footer/twitter.png');
+}
+
+.profile-youtube {
+    background-image: url('../images/footer/youtube.png');
+}
+
+.profile-linkedin {
+    background-image: url('../images/footer/linkedin.png');
+}
+
+.profile-page__links {
+    position: relative;
+   
+    .profile-page__first {
+        background-color: #546e7a;
+        width: 270px;
+        padding: 15px 60px;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 500;
+        font-family: 'Roboto-Medium';
+        box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    }
+
+    .icon-mail-envelope-closed1 {
+        position: absolute;
+        top: 17px;
+        left: 49px;
+        font-size: 23px;
+        color: #fff;
+    }
+
+    .profile-page__second {
+        width: 270px;
+        padding: 15px 60px;
+        display: block;
+        background-color: $green;
+        font-size: 16px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 500;
+        font-family: 'Roboto-Medium';
+        box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+        margin-bottom: 30px;
+    }
+}
+
+
+// end  profile-page__aside
+
+
+// start profile-page__content
+
+.profile-page__images {
+    max-width: 830px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+}
+.profile-page__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 332px;
+    max-width: 829px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+// end profile-page__content
