@@ -8,15 +8,12 @@
     justify-content: space-between;
 }
 
-// .single-page__content {
-//     margin-right: 30px;
-// }
-
 .single-page__images {
     padding: 20px;
     border: 1px solid #dcdcdc;
     max-width: 870px;
     margin-bottom: 35px;
+    background-color: #fff;
 }
 
 .single-page__img {
@@ -49,7 +46,7 @@
 }
 
 .single-page__link {
-    a+a {
+    a + a {
         margin-left: 15px;
     }
 
@@ -81,6 +78,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    width: 870px;
 }
 
 .single-page__link {
@@ -117,7 +115,9 @@
         background-image: url('../images/single/single-pinterest.png');
     }
 }
-
+.single-page__tabs {
+    margin-bottom: 50px;
+}
 .tabs {
     width: 870px;
     display: flex;
@@ -135,7 +135,9 @@
     }
 
 }
-
+.tabs .tab.active {
+    border-bottom: 3px solid $green;
+}
 .tab_content {
     width: 870px;
     border: 1px solid #e8e8e8;
@@ -176,7 +178,65 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.single-page__products {
+    width: 870px;
+    border: 1px solid rgb(215, 215, 215);
+    background-color: #fff;
+    padding: 20px 25px;
+}
+.single-page__products-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-bg;
+    font-family: 'Roboto-Medium';
+}
+.single-page__items {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 870px;
+}
+.single-page__item {
+    width: 270px;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 25px;
+}
+.single-page__item-img {
+    min-height: 90px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    
+}
+.single-page__item-content {
+    padding: 9px 21px 9px 21px;
+    background-color: #fff;
+}
+.single-page__item-name {
+    font-size: 14px;
+    color: $color-bg;
+    font-weight: 500;
+    font-family: 'Roboto-Medium';
+}
+.single-page__item-category {
+    font-size: 12px;
+    color: $green;
+}
+.single-page__item-price {
+    font-size: 18px;
+    color: $color-bg;
+    font-weight: 700;
+    font-family: 'Roboto-Bold';
+}
 
+
+  
 // start single-page__aside
 
 
