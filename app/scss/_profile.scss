@@ -2,9 +2,11 @@
 .profile-page__wrapper {
     display: flex;
 }
+
 .profile-page__aside {
     margin-right: 25px;
 }
+
 .profile-page {
     padding: 50px 0 110px;
     background-color: #f4f6f5;
@@ -49,7 +51,7 @@
 
 .profile-page__links {
     position: relative;
-   
+
     .profile-page__first {
         background-color: #546e7a;
         width: 270px;
@@ -96,20 +98,56 @@
 // start profile-page__content
 
 .profile-page__images {
-    max-width: 830px;
+    width: 870px;
     padding: 16px;
     background-color: #fff;
     border: 1px solid #dcdcdc;
 }
+
 .profile-page__img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 332px;
-    max-width: 829px;
-    width: 100%;
+    width: 830px;
+    display: block;
 }
 
+.profile-page__main {
+    display: flex;
+    margin-top: 25px;
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+}
+
+.profile-page__main-box {
+    text-align: center;
+    padding: 20px 20px 15px 20px;
+    width: 216px;
+    &+.profile-page__main-box {
+        border-left: 1px solid #dcdcdc;
+    }
+
+    .profile-page__main-text {
+        font-size: 14px;
+        color: $color-bg;
+        font-weight: 500;
+        font-family: 'Roboto-Medium';
+    }
+
+    .profile-page__main-desc {
+        color: #707070;
+        font-size: 14px;
+        .rate-star {
+            margin-right: 5px;
+        }
+        
+    }
+}
+.profile-page__desc-price {
+    font-size: 14px;
+    color: #000;
+}
 
 
 
