@@ -91,6 +91,21 @@
     }
 }
 
+.profile-page__author {
+    margin-bottom: 25px;
+}
+
+.profile-page__author-box {
+    padding: 20px 0 0;
+}
+
+.profile-page__share {
+    margin-bottom: 40px;
+}
+
+.profile-page__share-main {
+    margin-bottom: 12px;
+}
 
 // end  profile-page__aside
 
@@ -124,6 +139,7 @@
     text-align: center;
     padding: 20px 20px 15px 20px;
     width: 216px;
+
     &+.profile-page__main-box {
         border-left: 1px solid #dcdcdc;
     }
@@ -138,20 +154,39 @@
     .profile-page__main-desc {
         color: #707070;
         font-size: 14px;
+
         .rate-star {
             margin-right: 5px;
         }
-        
+
     }
 }
+
 .profile-page__desc-price {
     font-size: 14px;
     color: #000;
 }
 
 
+.single-page__tabs.profile__tabs {
+    display: block;
+    .tabs {
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+        border: 1px solid #707070;
+        border-bottom: none;
+        span {
+            display: block;
+            background-color: #fff;
+            border-bottom: 1px solid #707070;
+        }
+    }
 
+    .tab_content {
+        width: 100%;
+    }
 
+}
 
-
-// end profile-page__content
+    // end profile-page__content
