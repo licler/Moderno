@@ -101,6 +101,20 @@
 
 .profile-page__share {
     margin-bottom: 40px;
+    padding-left: 16px;
+    position: relative;
+}
+.profile-page__share:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: $green;
+    transform: translateY(-50%);
 }
 
 .profile-page__share-main {
@@ -194,7 +208,7 @@
     }
 
     .tabs .tab.active {
-        border-bottom: 3px solid #8bc34a;
+        border-bottom: 3px solid $green;
     }
 
     .tab_content {
@@ -202,5 +216,65 @@
     }
 
 }
-
+.single-page__tabs.profile__tabs {
+    .tabs span {
+        font-family: 'Roboto-Medium' !important;
+        font-weight: 500;
+        color: #707070;
+        position: relative;
+        padding-left: 55px;
+        &.active::before {
+           color: $green; 
+        }
+        &::before {
+            left: 24px;
+            font-size: 14px;
+            color: #d0d0d0;
+            position: absolute;
+            font-family: 'icomoon'
+        }
+    }
+}
+.profile-page__info-title {
+    font-size: 20px;
+    color: $color-bg;
+    font-weight: 700;
+    font-family: 'Roboto-Bold';
+    margin-bottom: 25px;
+}
+.profile-page__info-text {
+    color: #707070;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.profile-page__skills-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.profile-page__skills-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-bg;
+    font-family: 'Roboto-Medium';
+}
+.profile-page__skills-num {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-bg;
+    font-family: 'Roboto-Bold';
+}
+.profile-page__skills-line {
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    span {
+        display: block;
+        height: 15px;
+        border-radius: 3px;
+        background-image: url('../images/profile/probar.jpg');
+        background-repeat: repeat;
+    }
+}
 // end profile-page__content

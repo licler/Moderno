@@ -32,7 +32,7 @@
     font-display: block;
   }
  
-  
+
   
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -58,7 +58,7 @@
   .icon-pagelines:before {
     content: "\e909";
   }
-  .icon-bolt:before {
+  .icon-pagelines:before {
     content: "\e904";
   }
   .icon-flash:before {
