@@ -14,6 +14,7 @@
         border: 1px solid #dedede;
         display: block;
         text-align-last: left;
+        
 
         span {
             display: block;
@@ -24,7 +25,21 @@
             color: #707070;
             font-weight: 500;
             font-family: 'Roboto-Medium';
+            position: relative;
+            padding-left: 50px;
+        }
 
+        & span:before {
+            content: "";
+            background-image: url('../images/footer/arrows.png');
+            background-repeat: no-repeat;
+            display: block;
+            width: 6px;
+            height: 11px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
@@ -35,44 +50,61 @@
     .tab_content {
         width: 100%;
         border: 1px solid #e8e8e8;
-        padding: 0;
+        padding: 0 0 75px;
     }
 }
 
-// .settings-page__tabs {
-//     .tabs span {
 
-//     }
-// }
 .settings-page__title {
     font-size: 24px;
     color: $color-bg;
-    // line-height: 60px;
     font-weight: 500;
     font-family: 'Roboto-Medium';
     border-bottom: 1px solid #dcdcdc;
     padding: 20px 30px;
 }
+
 .settings-page__line {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     padding: 0 30px;
-    
+    position: relative;
+
+    select {
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        padding: 0px 30px 0 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #dcdcdc;
+        outline: none;
+        color: #707070;
+        appearance: none;
+    }
+
 }
 
+
 .settings-page__input {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     height: 40px;
     padding: 0px 30px 0 10px;
     background-color: #f9f9f9;
     border: 1px solid #dcdcdc;
     outline: none;
+    color: #000;
 }
+
 .settings-page__line-name {
     color: #444444;
     padding: 10px 0;
 }
+
+
+
+
 .settings-page__button {
     width: 110px;
     height: 45px;
@@ -84,5 +116,6 @@
     outline: none;
     cursor: pointer;
     margin-top: 20px;
+    margin-left: 298px;
 
 }
