@@ -45,6 +45,8 @@ $(function(){
         return false;
       });
 
+      $('input[type="file"], select').styler();
+
 
 
 
