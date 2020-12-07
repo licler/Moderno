@@ -118,7 +118,35 @@
 }
 .withdrawals__history-item {
     display: flex;
+    height: 42px;
+    align-items: center;
     justify-content: space-between;
-    padding: 15px 18px;
-    background-color: #f9f9f9;
+    color: #444;
+    font-size: 13px;
+    &:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+.withdrawals__history-price {
+    font-weight: 700;
+    font-family: 'Roboto-Bold';
+    width: 80px;
+    padding: 0 20px;
+}
+.withdrawals__history-data {
+    font-weight: 500;
+    font-family: 'Roboto-Medium';
+    padding: 0 20px;
+    width: 130px;
+}
+.withdrawals__history-status {
+    font-weight: 700;
+    font-family: 'Roboto-Bold';
+    padding-right: 35px;
+    width: 105px;
+    padding: 0 20px;
+}
+.withdrawals__history-email {
+    width: 180px;
+    padding: 0 20px;
 }
