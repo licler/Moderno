@@ -9,12 +9,14 @@
     height: 90px;
     align-items: center;
 }
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
     height: 90px;
     align-items: center;
 }
+
 .header__menu {
     height: 60px;
     padding: 20px 0;
@@ -63,6 +65,7 @@
     text-align: center;
     padding: 5px;
 }
+
 .header__link-button {
     background-color: $red;
     width: 72px;
@@ -73,6 +76,7 @@
     padding: 5px;
     margin-left: 25px;
 }
+
 .first-btn {
     background-color: $green;
     margin-left: 25px;
@@ -117,6 +121,7 @@
     right: -7px;
     z-index: 10;
 }
+
 .basket__user-circle {
     width: 18px;
     height: 18px;
@@ -129,6 +134,7 @@
     right: -7px;
     z-index: 10;
 }
+
 .message__user-circle {
     width: 18px;
     height: 18px;
@@ -141,6 +147,7 @@
     right: -7px;
     z-index: 10;
 }
+
 .notice__user-circle {
     width: 18px;
     height: 18px;
@@ -153,12 +160,14 @@
     right: -7px;
     z-index: 10;
 }
+
 .header__user {
     display: flex;
     margin-left: 25px;
     height: 60px;
     align-items: center;
 }
+
 .header__user-img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,9 +176,11 @@
     height: 34px;
     display: block;
 }
+
 .header__user-content {
     margin-left: 15px;
 }
+
 .header__user-name {
     color: #222222;
     font-size: 14px;
@@ -177,6 +188,7 @@
     font-family: 'Roboto-Medium';
     padding-right: 25px;
     position: relative;
+
     .icon-angle-down {
         position: absolute;
         top: 2px;
@@ -193,7 +205,130 @@
     font-weight: 700;
     color: $green;
 }
+
 // end header
+
+// start modal
+#modal {
+    background-color: $green;
+    text-align: center;
+    max-width: 730px;
+    width: 100%;
+    padding: 88px 0 108px;
+}
+
+.login_title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'Roboto-Bold';
+    margin-bottom: 35px;
+
+}
+
+.login__wrapper {
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    label {
+        position: relative;
+        display: block;
+        width: 100%;
+
+        &::before {
+            position: absolute;
+            font-size: 14px;
+            font-family: 'icomoon';
+            color: #fff;
+            left: 18px;
+            top: 10px;
+        }
+    }
+
+    .login__name::before {
+        content: "\e909";
+    }
+
+    .login__pass::before {
+        content: "\e904";
+    }
+
+    input {
+        height: 42px;
+        background-color: #76ae36;
+        width: 100%;
+        margin-bottom: 8px;
+        display: block;
+        padding: 15px 18px;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 14px;
+            padding-left: 22px;
+        }
+    }
+}
+
+.login__btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+margin-bottom: 20px;
+    button {
+        width: 140px;
+        border: none;
+        outline: none;
+        padding: 18px 16px;
+        text-align: center;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Roboto-Bold';
+        text-transform: uppercase;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+    }
+    a {
+        width: 250px;
+        background-color: #76ae36;
+        color: #fff;
+        padding: 18px 16px;
+        text-align: center;
+        position: relative;
+        font-size: 18px;
+
+        &::before {
+            position: absolute;
+            font-size: 14px;
+            font-family: 'icomoon';
+            color: #fff;
+            left: 25px;
+            top: 17px;
+        }
+    }
+}
+
+.login__link::before {
+    content: "\e93e";
+}
+.lost__pass {
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    display: block;
+}
+.fancybox-button svg {
+    color: #fff;
+    font-size: 18px;
+}
+// end modal
+
+
 
 // start market
 .market {
@@ -203,6 +338,7 @@
     height: 530px;
     padding: 150px 0;
 }
+
 .single {
     height: 230px;
     padding: 60px 0;
@@ -227,9 +363,11 @@
     text-align: center;
     margin-bottom: 50px;
 }
+
 .single__content-desc {
     margin-bottom: 20px;
 }
+
 .market___form {
     text-align: center;
     max-width: 670px;

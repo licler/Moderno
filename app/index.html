@@ -37,7 +37,8 @@
                                     <a class="basket header__circle icon-cart" href="#">
                                         <div class="basket__circle">8</div>
                                     </a>
-                                    <a class="header__link-btn first-btn" href="#">Login</a>
+                                    <a class="header__link-btn first-btn" data-fancybox data-src="#modal"
+                                        href="javascript:;">Login</a>
                                     <a class="header__link-btn second-btn" href="#">Register</a>
                                 </div>
                             </div>
@@ -1082,6 +1083,26 @@
         </div>
     </div>
 
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login_title">
+                Login
+            </div>
+            <form>
+                <label class="login__name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label class="login__pass">
+                    <input type="password" placeholder="Passoword" required>
+                </label>
+                <div class="login__btn">
+                    <button type="submit">Submit</button>
+                    <a class="login__link" href="#">Creat An Account?</a>
+                </div>
+                <a class="lost__pass" href="#">Lost Password?</a>
+            </form>
+        </div>
+    </div>
 
 
 
