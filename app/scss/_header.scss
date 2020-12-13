@@ -164,8 +164,9 @@
 .header__user {
     display: flex;
     margin-left: 25px;
-    height: 60px;
+    height: 90px;
     align-items: center;
+    position: relative;
 }
 
 .header__user-img {
@@ -206,6 +207,112 @@
     color: $green;
 }
 
+.users__menu {
+    display: none;
+    max-width: 160px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    z-index: 2;
+}
+
+.users__menu-list {
+    a {
+        font-size: 12px;
+        color: #546e7a;
+    }
+
+    li {
+        padding-left: 15px;
+        position: relative;
+        margin-bottom: 15px;
+        &::before {
+            content: ""; 
+            background-image: url('../images/footer/arrows.png');
+            background-repeat: no-repeat;
+            display: block;
+            width: 6px;
+            height: 11px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.header__user:hover .users__menu {
+    display: block;
+}
+
+.basket__info {
+    display: block;
+    width: 268px;
+    background-color: #fff;
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    border: 1px solid  rgb(204, 204, 204);
+    position: absolute;
+    top: 75px;
+    right: 250px;
+    z-index: 4;
+}
+.basket__info-wrapper {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.basket__info-images {
+    a {
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 73px;
+        height: 57px;
+        display: block;
+    }
+}
+.basket__info-content {
+    margin-left: 10px;
+    .basket__info-name {
+        color: $color-bg;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Roboto-Medium';
+        margin-bottom: 7px;
+        margin-top: -3px;
+    }
+    .basket__info-desc {
+        font-size: 12px;
+        color: $green;
+        margin-bottom: 9px;
+        line-height: 0;
+    }
+    .basket__info-price {
+        font-weight: 500;
+        font-family: 'Roboto-Medium';
+        margin-top: -2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // end header
 
 // start modal
@@ -215,6 +322,7 @@
     max-width: 730px;
     width: 100%;
     padding: 88px 0 108px;
+    display: none;
 }
 
 .login_title {
@@ -279,7 +387,8 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-margin-bottom: 20px;
+    margin-bottom: 20px;
+
     button {
         width: 140px;
         border: none;
@@ -293,6 +402,7 @@ margin-bottom: 20px;
         text-transform: uppercase;
         box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
     }
+
     a {
         width: 250px;
         background-color: #76ae36;
@@ -316,16 +426,19 @@ margin-bottom: 20px;
 .login__link::before {
     content: "\e93e";
 }
+
 .lost__pass {
     color: #fff;
     text-align: left;
     font-size: 18px;
     display: block;
 }
+
 .fancybox-button svg {
     color: #fff;
     font-size: 18px;
 }
+
 // end modal
 
 
