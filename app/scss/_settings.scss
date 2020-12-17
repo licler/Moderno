@@ -15,7 +15,7 @@
         border: 1px solid #dedede;
         display: block;
         text-align-last: left;
-        
+
 
         span {
             display: block;
@@ -103,9 +103,6 @@
     padding: 10px 0;
 }
 
-
-
-
 .settings-page__button {
     width: 110px;
     height: 45px;
@@ -119,4 +116,11 @@
     margin-top: 20px;
     margin-left: 298px;
 
+}
+
+.settings-page__content {
+    .jq-selectbox {
+        max-width: 540px;
+        width: 100%;
+    }
 }

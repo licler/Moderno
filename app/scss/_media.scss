@@ -1,0 +1,262 @@
+// start About.html 
+@media (max-width: 430px) {
+    .about-page__box-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .about-page__content {
+        padding: 25px;
+    }
+
+    .about-page__content-title {
+        font-size: 18px;
+    }
+}
+
+
+// end About.html 
+
+// start contacts.html
+@media (max-width: 1100px) {
+    .contacts-page__box-info {
+        display: block;
+    }
+
+    .contacts-page__box-contact {
+        display: flex;
+        width: 100%;
+    }
+    .contacts-page__adress {
+        width: 350px;
+        margin-right: 10px;
+        p {
+            width: 350px;
+        }
+    }
+    .contacts-page__phone {
+        width: 300px; 
+        a {
+            width: 300px;  
+        }
+    }
+    .contacts-page__email {
+        width: 300px; 
+        a {
+            width: 300px;  
+        }
+    }
+    .contacts-page__form-input {
+        width: 100%;
+        display: block;
+    }
+    .contacts-page__form input {
+        width: 725px;
+    }
+}
+@media (max-width: 910px) {
+    .contacts-page__box-contact {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 820px) {
+    .contacts-page__form input {
+        width: 500px;
+    }
+    .contacts-page__form textarea {
+        width: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .contacts-page__form input {
+        width: 400px;
+    }
+    .contacts-page__form textarea {
+        width: 400px;
+    }
+}
+@media (max-width: 490px) {
+    .contacts-page__form input {
+        width: 300px;
+    }
+    .contacts-page__form textarea {
+        width: 300px;
+    }
+    .contacts-page__adress-title, .contacts-page__phone-title, .contacts-page__email-title {
+        font-size: 18px;
+    }
+    .contacts-page__form-title {
+        font-size: 18px;
+    }
+}
+@media (max-width: 450px) {
+    .contacts-page__box-title {
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .contacts-page__box-content {
+        padding: 25px;
+    }
+}
+@media (max-width: 410px) {
+    .contacts-page__adress {
+        width: 310px;
+    }
+    .contacts-page__adress p {
+        width: 310px;
+    }
+}
+@media (max-width: 380px) {
+    .contacts-page__form input {
+        width: 200px;
+    }
+    .contacts-page__form textarea {
+        width: 200px;
+        height: 110px;
+    }
+    .contacts-page__adress-title, .contacts-page__phone-title, .contacts-page__email-title {
+        font-size: 16px;
+    }
+    .contacts-page__form-title {
+        font-size: 16px;
+    }
+    .contacts-page__form button {
+        font-size: 15px;
+        padding: 9px;
+    }
+}
+@media (max-width: 340px) {
+    .contacts-page__adress {
+        width: 200px;
+    }
+    .contacts-page__adress p {
+        width: 200px;
+        font-size: 14px;
+    }
+    .contacts-page__box-contact {
+        width: 200px;
+    }
+    .contacts-page__phone {
+        a {
+            font-size: 14px;
+        }
+    }
+    .contacts-page__email {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+// end contacts.html
+
+
+// start errors.html
+@media (max-width: 1160px) {
+    .errors-page__content-title {
+        font-size: 220px;
+    }
+    .errors-page__content-desc {
+        font-size: 28px;
+    }
+    .errors-page__content-title::after {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .errors-page__content-title {
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .errors-page__content-desc {
+        font-size: 25px;
+    }
+    .errors-page__content-text {
+        font-size: 16px; 
+        padding: 0 10px;
+    }
+}
+@media (max-width: 380px) {
+    .errors-page__content-title {
+        font-size: 120px;
+        line-height: 120px;
+        padding-bottom: 20px;
+    }
+    .errors-page__content-desc {
+        font-size: 20px;
+    }
+    .errors-page__content-text {
+        font-size: 14px;
+    }
+}
+// end errors.html
+
+// start index.html
+@media (max-width: 647px){
+    .products__inner-btn button {
+        margin-bottom: 25px;
+    }
+    .products__wrapper-title {
+        font-size: 32px;
+    }
+    .product__inner-items {
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    .products__wrapper-title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 435px) {
+    .product__inner-btn button {
+        margin-bottom: 18px;
+    }
+    .product__inner-btn {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 385px) {
+    .products__wrapper-title {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .product__inner-info {
+        padding: 18px 15px;
+    }
+    .product__inner-star {
+        .rate-star {
+            margin-right: 0px;
+        }
+    }
+    .product__inner-title {
+        font-size: 16px;
+    }
+    .product__inner-content {
+        padding: 18px 15px;
+    }
+    
+}
+@media (max-width: 340px) {
+    .product__avatar-name {
+        font-size: 13px;
+        padding-right: 3px;
+    }
+    .product__avatar {
+        margin-right: 5px;
+    }
+    .product__inner-title {
+        font-size: 15px;
+    }
+}
+@media (max-width: 330px) {
+    .product__inner-name {
+        padding-right: 5px
+    }
+    .product__inner-info {
+        padding: 18px 10px;
+    }
+}
+
+// end index.html
