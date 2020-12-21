@@ -12,9 +12,36 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1190,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              arrows: false,
+            }
+          },
+          
+          {
+            breakpoint: 1140,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 790,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false
+            }
+          },
+        ]
       });
-      
+
 
       $(".js-range-slider").ionRangeSlider({
         type: "double",
