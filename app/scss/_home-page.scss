@@ -195,6 +195,7 @@
 .categories__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .categories__item {
