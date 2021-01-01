@@ -75,6 +75,11 @@ $(function(){
       $('input[type="file"], select').styler();
 
 
+      $('.menu__big-btn').on('click', function() {
+        $('.menu__list').slideToggle();
+      });
+
+
 
 
 
