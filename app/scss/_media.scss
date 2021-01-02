@@ -597,6 +597,7 @@
     .notice__box {
         display: none;
     }
+
     .message__box {
         display: none;
     }
@@ -629,7 +630,7 @@
 
     .header__inner-btn {
         display: block;
-        background-color: $color-bg;
+        background-color: $green;
         width: 70px;
         height: 70px;
         position: absolute;
@@ -663,50 +664,58 @@
             z-index: 3;
         }
     }
+
     .header__user {
-        height: 70px;  
+        height: 70px;
     }
 }
+
 @media (max-width: 450px) {
     .basket__box {
         display: none;
     }
 }
+
 @media (max-width: 400px) {
     .header__link-button {
         margin-left: 10px;
     }
 }
+
 @media (max-width: 385px) {
     .header__user {
         margin-left: 2px;
     }
 }
+
 @media (max-width: 360px) {
-    // .header__user-content {
-    //     display: none;
-    // }
+
     .header__user-name {
         line-height: 15px;
         font-size: 13px;
     }
+
     .header__user-price {
         font-size: 13px;
     }
+
     .header__user-content {
         margin-left: 6px;
     }
+
     .header__user-name {
         padding-right: 2px;
     }
+
     .header__link-button {
         margin-left: 5px;
         width: 65px;
     }
+
     .header__user-name .icon-angle-down {
         display: none;
     }
-    
+
 }
 
 
@@ -731,3 +740,145 @@
 // }
 
 // end header
+
+// start new-items.html
+@media (max-width: 700px) {
+    .product-page__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .single {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .market___content-desc {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .product-page__filter {
+        flex-wrap: wrap;
+    }
+
+    .product-page__filter-inner {
+        margin-bottom: 20px;
+    }
+}
+
+
+// end new__items.html
+
+// start profile.html
+
+@media (max-width: 1195px) {
+    .profile-page__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-page__main {
+        margin-bottom: 30px;
+    }
+
+    .profile-page__content {
+        order: -1;
+    }
+}
+
+@media (max-width: 890px) {
+    .profile-page__images {
+        width: 700px;
+    }
+
+    .profile-page__img {
+        width: 670px;
+    }
+
+    .profile-page__main {
+        width: 700px;
+        display: block;
+    }
+
+    .profile-page__main-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-page__main-box+.profile-page__main-box {
+        border-top: 1px solid #dedede;
+        border-left: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .profile-page__images {
+        width: 500px;
+
+    }
+
+    .profile-page__img {
+        width: 470px;
+        min-height: 245px;
+    }
+
+    .profile-page__main {
+        width: 500px;
+    }
+
+    .single-page__tabs.profile__tabs {
+        display: block;
+    }
+
+    .tabs {
+        margin-bottom: 35px;
+        width: 600px;
+
+        .tab {
+            width: 600px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .tabs {
+        .tab {
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 535px) {
+    .tabs {
+        .tab {
+            width: 400px;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .profile-page__images {
+        width: 300px;
+    }
+
+    .profile-page__img {
+        width: 270px;
+        min-height: 165px;
+    }
+
+    .profile-page__main {
+        width: 300px;
+    }
+}
+@media (max-width: 435px) {
+    .tabs {
+        .tab {
+            width: 270px;
+        }
+    }
+}
+
+// end profile.html
+
+// start settings.html
