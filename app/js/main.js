@@ -79,6 +79,10 @@ $(function(){
         $('.menu__list').slideToggle();
       });
 
+      $('.header__inner-btn').on('click', function() {
+        $('.header__top-inner').toggleClass('active');
+      });
+
 
 
 

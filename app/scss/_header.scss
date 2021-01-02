@@ -513,6 +513,14 @@
     display: block;
 }
 
+.header__wrapper-btn, .menu__big-btn {
+    display: none;
+}
+.header__inner-btn {
+    &.icon-emoji-neutral:before {
+        display: none;
+    }
+}
 
 
 
