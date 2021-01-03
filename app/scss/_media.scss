@@ -610,6 +610,16 @@
 }
 
 @media (max-width: 540px) {
+    .users__menu {
+        top: 70px;
+        padding: 15px
+    }
+
+    .basket__info {
+        left: -20px;
+        top: 52px;
+    }
+
     .menu__big-btn {
         top: -43px;
     }
@@ -789,6 +799,17 @@
         order: -1;
     }
 }
+@media (max-width: 1080px) {
+    .single-page__tabs.profile__tabs {
+        flex-wrap: wrap;
+    }
+    .single-page__tabs.profile__tabs .tabs {
+        margin-left: 10px;
+        max-width: 100%;
+        border-right: none;
+        border-left: none;
+    }
+}
 
 @media (max-width: 890px) {
     .profile-page__images {
@@ -829,34 +850,9 @@
     .profile-page__main {
         width: 500px;
     }
-
-    .single-page__tabs.profile__tabs {
-        display: block;
-    }
-
-    .tabs {
-        margin-bottom: 35px;
-        width: 600px;
-
-        .tab {
-            width: 600px;
-        }
-    }
+   
 }
-@media (max-width: 640px) {
-    .tabs {
-        .tab {
-            width: 500px;
-        }
-    }
-}
-@media (max-width: 535px) {
-    .tabs {
-        .tab {
-            width: 400px;
-        }
-    }
-}
+
 @media (max-width: 520px) {
     .profile-page__images {
         width: 300px;
@@ -871,14 +867,71 @@
         width: 300px;
     }
 }
-@media (max-width: 435px) {
-    .tabs {
-        .tab {
-            width: 270px;
-        }
-    }
-}
 
 // end profile.html
 
 // start settings.html
+@media (max-width: 1080px) {
+    .settings-page__tabs {
+        flex-direction: column;
+    }
+
+    .tab_content {
+        order: -1;
+        margin-bottom: 35px;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+    .settings-page__input {
+        width: 300px;
+    }
+
+    .settings-page__content .jq-selectbox {
+        width: 300px;
+    }
+
+    .settings-page__line {
+        padding: 0;
+    }
+
+    .settings-page__content {
+        padding: 0 30px;
+    }
+
+    .settings-page__button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .settings-page__tabs {
+        .tabs {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 605px) {
+    .settings-page__line {
+        display: block;
+    }
+}
+
+@media (max-width: 396px) {
+    .settings-page__input {
+        width: 200px;
+    }
+
+    .settings-page__content .jq-selectbox {
+        width: 200px;
+    }
+
+    .settings-page__title {
+        font-size: 20px;
+    }
+}
+
+
+// end settings.html
