@@ -592,7 +592,6 @@
         line-height: 50px;
     }
 }
-
 @media (max-width: 680px) {
     .notice__box {
         display: none;
@@ -665,10 +664,7 @@
         transition: all 1s;
         background-color: #fff;
         height: 70px;
-
-        // transform: translateX(206%);
         &.active {
-            //  transform: translateX(210px);  
             right: 0;
             left: 100%;
             z-index: 3;
@@ -725,29 +721,10 @@
     .header__user-name .icon-angle-down {
         display: none;
     }
-
+    .header__circle {
+        display: none;
+    }
 }
-
-
-
-// @media (max-width: 518px) {
-//     .header__top-inner {
-//         left: 59px;
-//         transition: all 1s;
-//     }
-// }
-
-// @media (max-width: 360px) {
-//     .header__circle {
-//         display: none;
-//     }
-// }
-
-// @media (max-width: 330px) {
-//     .header__top-inner {
-//         left: 30px;
-//     }
-// }
 
 // end header
 
@@ -799,10 +776,12 @@
         order: -1;
     }
 }
+
 @media (max-width: 1080px) {
     .single-page__tabs.profile__tabs {
         flex-wrap: wrap;
     }
+
     .single-page__tabs.profile__tabs .tabs {
         margin-left: 10px;
         max-width: 100%;
@@ -850,7 +829,7 @@
     .profile-page__main {
         width: 500px;
     }
-   
+
 }
 
 @media (max-width: 520px) {
@@ -935,3 +914,312 @@
 
 
 // end settings.html
+
+// start single-card.html
+
+@media (max-width: 1190px) {
+    .single-page__wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 910px) {
+    .single-page__box {
+        display: block;
+    }
+
+    .single-page__link {
+        margin-bottom: 20px;
+    }
+
+    .single-page__tabs .tabs {
+        flex-direction: column;
+        width: 750px;
+    }
+
+    .single-page__tabs .tab_content {
+        width: 750px;
+    }
+
+    .single-page__products {
+        width: 750px;
+    }
+
+    .single-page__items {
+        display: block;
+    }
+}
+
+@media (max-width: 780px) {
+    .single-page__tabs .tabs {
+        width: 600px;
+    }
+
+    .single-page__tabs .tab_content {
+        width: 600px;
+    }
+
+    .single-page__products {
+        width: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    .single-page__img {
+        min-height: 320px;
+    }
+
+    .single-page__title {
+        font-size: 25px;
+    }
+
+    .single-page__link {
+        width: 600px;
+
+    }
+
+    .single-page__link a {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    .single-page__link a+a {
+        margin-left: 0;
+    }
+
+    .single-page__tabs .tabs {
+        width: 480px;
+    }
+
+    .single-page__tabs .tab_content {
+        width: 480px;
+    }
+
+    .single-page__tabs .tab-item__list {
+        column-count: 1;
+    }
+
+    .single-page__products {
+        width: 480px;
+    }
+}
+
+@media (max-width: 525px) {
+    .single-page__img {
+        min-height: 250px;
+    }
+
+    .single-page__tabs .tabs {
+        width: 380px;
+    }
+
+    .single-page__tabs .tab_content {
+        width: 380px;
+    }
+
+    .single-page__products {
+        width: 380px;
+    }
+}
+
+@media (max-width: 425px) {
+    .single-page__img {
+        min-height: 200px;
+    }
+
+    .single-page__tabs .tabs {
+        width: 280px;
+    }
+
+    .single-page__tabs .tab_content {
+        width: 280px;
+        padding: 15px;
+    }
+
+    .single-page__tabs .tab-item__list {
+        line-height: 30px;
+    }
+
+    .single-page__products {
+        width: 280px;
+    }
+}
+
+@media (max-width: 370px) {
+    .single-page__img {
+        min-height: 180px;
+    }
+}
+
+// end single-card.html
+
+// start upload.html
+
+@media (max-width: 1180px) {
+    .upload-page__line {
+        .jq-selectbox.jqselect {
+            max-width: 600px;
+        }
+
+        input {
+            max-width: 600px;
+        }
+
+        textarea {
+            max-width: 600px;
+        }
+
+        .jq-file {
+            max-width: 600px;
+        }
+    }
+
+}
+
+@media (max-width: 860px) {
+    .upload-page__line {
+        .jq-selectbox.jqselect {
+            max-width: 400px;
+        }
+
+        input {
+            max-width: 400px;
+        }
+
+        textarea {
+            max-width: 400px;
+        }
+
+        .jq-file {
+            max-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .upload-page__line {
+        flex-direction: column;
+    }
+    .upload-page__inner-content {
+        button {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .upload-page__line {
+        input {
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+
+        textarea {
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .upload-page__line .jq-file__name {
+        margin-left: 90px;
+    }
+
+    .upload-page__line {
+        input {
+            padding: 0 15px;
+        }
+    }
+
+    .upload-page__inner-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .upload-page__inner-title {
+        font-size: 20px;
+    }
+}
+
+
+// end upload.html
+
+// start withdrawals.html
+@media (max-width: 1190px) {
+    .withdrawals__wrapper {
+        display: block;
+    }
+    .withdrawals__register {
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 615px) {
+    .withdrawals__history-item {
+        min-width: 500px;
+    }
+    .withdrawals__history-content {
+        padding: 10px;
+    }
+}
+@media (max-width: 565px) {
+    .withdrawals__history-items {
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 440px) {
+    .withdrawals__register-line {
+        input {
+            &::placeholder {
+                font-size: 11px;
+            }
+        }
+    }
+    .withdrawals__register-content {
+        padding: 20px;
+    }
+    .withdrawals__register-line {
+        input {
+            padding: 0 15px;
+        }
+    }
+    .withdrawals__title {
+        font-size: 20px;
+    }
+   
+}
+
+
+
+// endwithdrawals.html
+
+// start modal
+@media (max-width: 480px) {
+    #modal {
+        padding: 40px 0;
+    }
+    .login__wrapper {
+        padding: 20px;
+        input {
+            margin-bottom: 20px;
+        }
+    }
+    .login_title {
+        font-size: 30px;
+    }
+    .login__btn {
+        flex-direction: column;
+        button {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        a {
+            width: 100%;
+        }
+    }
+    
+}
+
+// end modal

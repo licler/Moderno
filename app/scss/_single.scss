@@ -271,17 +271,18 @@
     color: #e74c3c;
     font-weight: 500;
     font-family: 'Roboto-Medium';
+    margin-right: 10px;
 }
 
-.single-page__product-notice {
-    border: 1px solid #d3d3d3;
-    outline: none;
-    background-color: transparent;
-    font-size: 13px;
-    color: #70838d;
-    padding: 5px 25px 5px 10px;
-    appearance: none;
-}
+// .single-page__product-notice {
+//     border: 1px solid #d3d3d3;
+//     outline: none;
+//     background-color: transparent;
+//     font-size: 13px;
+//     color: #70838d;
+//     padding: 5px 25px 5px 10px;
+//     appearance: none;
+// }
 
 .single-page__product-box {
     position: relative;
@@ -292,6 +293,9 @@
         right: 15px;
         color: $green;
         font-size: 15px;
+    }
+    .jq-selectbox__trigger {
+        color: $green;
     }
 }
 
